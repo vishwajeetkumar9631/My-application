@@ -12,7 +12,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 # Load the pre-trained model
-MODEL_PATH = r'E:\image_classification_backend\models\my_image_classifier1.keras'
+MODEL_PATH = 'image_classification_backend/models/my_image_classifier1.keras'
 try:
     if not os.path.exists(MODEL_PATH):
         raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
